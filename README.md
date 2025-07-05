@@ -14,3 +14,25 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+#############################################################################
+##     This program is distributed in the hope that it will be useful,     ##
+##     but WITHOUT ANY WARRANTY; without even the implied warranty of      ##
+##           MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.          ##
+##           See the GNU General Public License for more details.          ##
+######                                                                 ######
+##                                                                         ##
+##               This is a DNS Filter Proxy written in Java.               ##
+##        It can be used for filtering ads and other unwished hosts        ##
+##                      based on Host Name filtering.                      ##
+##     Please see dnsfilter.conf for settings and their documentation.     ##
+##                                                                         ##
+#############################################################################
+#                                                                           #
+#                NOTE! These scripts are EXPERIMENTAL ONLY!                 # 
+#                  Only use in case you are knowledgable!                   #
+#                                                                           #
+############################################################################# 
+
+*****************************************************************************
+*************** Setup and Run personalDNSfilter on Windows OS ***************
+*****************************************************************************
