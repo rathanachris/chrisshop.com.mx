@@ -166,7 +166,7 @@ Address :
     </form>
      </section>
     </main>
-<php
+<?php
  $website = invalid_input($_POST["website"]);
 if (!preg_match("/\b(?:(?:https?|ftp):\http/chrisrathana/\/|www\/\onlinesop/\com.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
   $websiteErr = "Invalid URL";}
@@ -176,8 +176,9 @@ URL(document).ready(function($){
  		$("URL").slideToggle();
 	 	 $("URL").toggleClass("active");
 	   });
-  });     
+     });     
 }
+?>
    <center><footer>
         <p> ® 2025 My Website.com. All rights reserved.</p>
     </footer></center>
