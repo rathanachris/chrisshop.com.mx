@@ -20,14 +20,11 @@ if(isset($_POST['submit'])) {
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <title>smliestore.com|contact</title>
+    <title>chrisshop.com.mx|contact.html</title>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width"=device-widh, initial-scale="1"/>    
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet.css">
-    <meta name="description" content="Welcome to smlie store!">
-    <meta property="og:title" content="online smlie store">
-    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type rel="icon" href="images/dompec.png" href="images/favicon.ico"> 
 </head>
@@ -80,7 +77,7 @@ if(isset($_POST['submit'])) {
    <center><h1>ទំនាក់ទំនង</h1>
     <p>សូមផ្ញើសារមកយើងដោយបំពេញ Form ខាងក្រោម:</p>
 
-    <form action="mailto:support@chrisshop.com" method="post" enctype="text/plain">
+    <form action="mailto:chris@chrisshop.com.mx" method="post" enctype="text/plain">
         <input type="text" name="name" placeholder="ឈ្មោះរបស់អ្នក" required>
         <input type="email" name="email" placeholder="អ៊ីមែលរបស់អ្នក" required>
         <textarea name="message" placeholder="សារ" rows="6" required></textarea>
@@ -91,7 +88,7 @@ if(isset($_POST['submit'])) {
     <h1>ទំនាក់ទំនង</h1>
     <p>សូមទាក់ទងមកយើងតាមរយៈ:</p>
     <ul>
-        <li>អ៊ីមែល: support@smliestore.com</li>
+        <li>អ៊ីមែល:chris@chrisshop.com.mx</li>
         <li>ទូរស័ព្ទ: +855 123 456 789</li>
         <li>អាសយដ្ឋាន: ភ្នំពេញ, កម្ពុជា</li>
     </ul>
@@ -108,7 +105,7 @@ if(isset($_POST['submit'])) {
 <script>
 function reviewpage(crt) {
 }
-const server="127.0.0.1:3000";
+const server="3000";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
