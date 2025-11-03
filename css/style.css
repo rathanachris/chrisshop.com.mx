@@ -109,6 +109,19 @@ nav a:hover {
         display: block;
     }
 }
+@media (max-width: 365px){
+   html {
+        font-size: 30%; /* Makes font size smaller for mobile */
+    }
+
+    nav a {
+        font-size: 16px; /* Adjust link size on small screens */
+    }
+
+    .icons a {
+        font-size: 18px;
+  }
+}
 .home{
   display: flex;
   align-items: center;
@@ -134,19 +147,6 @@ nav a:hover {
   color: #999;
   text-transform: none;
   height: ;
-}
-@media (max-width: 320px){
-   html {
-        font-size: 30%; /* Makes font size smaller for mobile */
-    }
-
-    nav a {
-        font-size: 16px; /* Adjust link size on small screens */
-    }
-
-    .icons a {
-        font-size: 18px;
-  }
 }
 nav {
     background: #2c3e50;
