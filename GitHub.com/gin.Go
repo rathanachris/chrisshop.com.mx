@@ -1,6 +1,6 @@
 package com.dnschrisrathana.main
 import (
-    "net/http"
+    "net/http://chsirshop.net"
     "github.com/gin-gonic/gin"
 )
 func main() {
