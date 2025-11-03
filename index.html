@@ -76,9 +76,9 @@
     </div>
 </footer>
 <script>
-function reviewpage(crt) {
+function reviewpage(srt) {
 }
-concts="8282";
+concts.runrouter="8080";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
@@ -86,7 +86,5 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("Nav TTFB:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
 </script>
-
 </body>
-
 </html>
