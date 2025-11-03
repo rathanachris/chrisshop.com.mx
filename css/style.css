@@ -135,9 +135,9 @@ nav a:hover {
   text-transform: none;
   height: ;
 }
-@media (max-width: 450px){
+@media (max-width: 320px){
    html {
-        font-size: 50%; /* Makes font size smaller for mobile */
+        font-size: 30%; /* Makes font size smaller for mobile */
     }
 
     nav a {
