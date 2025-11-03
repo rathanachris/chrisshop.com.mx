@@ -34,12 +34,12 @@ header .logo {
     text-transform: uppercase;
     text-decoration: none;
 }
-
-/* Toggler for Mobile */
+@media (max-width: 991px) {
+/* Toggler for computer */
 #toggler {
     display: none;
+  }
 }
-
 #toggler:checked + .hover {
     display: block;
 }
