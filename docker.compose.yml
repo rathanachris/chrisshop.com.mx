@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: chrisrathana-mydb
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - DB_HOST=db
+      - DB_PORT=5432
+    depends_on:
+      - db
+    networks:
+      - chrisrathana.net
+
+  db:
+    image: postgres:17.1
+    container_name: dnschrisrathana.com-mydb
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER= dnschrisrathana.sql_user
+      - POSTGRES_PASSWORD=apppass
+      - POSTGRES_DB= dnschrisrathana.sql_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - appnet
+
+  nginx:
+    image: nginx:alpine
+    container_name: webproxy
+    restart: unless-stopped
+    volumes:
+      - .Wedmaster/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./html:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+      - "443:443"
+    depends_on:
+      - app
+    my-networks:
+      - chrisrathana.net
+
+volumes:
+  db_data:
+
+networks:
+  chrisrathana.net:
+    driver: bridge
