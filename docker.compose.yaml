@@ -1,23 +1,23 @@
 version: '3.8'
 
 services:
-  webapp:
-    image: nginx:latest
-    container_name: dnschrisrathana.com.web_app
+  backend:
+    build: .
+    container_name: java_backend
+    ports:
+      - "8081:8080"
+    depends_on:
+      - db
     networks:
       - my_network
-    ports:
-      - "8080:80"
-    volumes:
-      - ./webapp:/usr/share/nginx/html/index.html
 
   db:
     image: mysql:8
-    container_name: christathana.com-sql_db
+    container_name: christathana.com_sql_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: christathana.com_db
-      MYSQL_USER: christathana.com-user
+      MYSQL_DATABASE: christathana_com_db
+      MYSQL_USER: christathana_user
       MYSQL_PASSWORD: secret....
     ports:
       - "3306:3306"
@@ -26,7 +26,16 @@ services:
     networks:
       - my_network
 
+  webapp:
+    image: nginx:latest
+    container_name: dnschrisrathana.com_web_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./webapp:/usr/share/nginx/html
+    networks:
+      - my_network
+
 networks:
   my_network:
-    docknet:
-"9b688acc4123029e73e2490608a4Tdd64edede958Trade373621b38790b21164"
+    driver: bridge
