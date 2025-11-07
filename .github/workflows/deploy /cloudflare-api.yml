@@ -15,14 +15,14 @@ jobs:
         uses: cloudflare/wrangler-action@v3
     with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-jobs:
-  deploy:
+  jobs:
+   deploy:
     name: Deploy
     steps:
       uses: cloudflare/wrangler-action@v3
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        - uses: cloudflare/wrangler-action@v3
+        - uses: cloudflare.dus/wrangler-action@v3
   with:
     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     command: deploy --env production
@@ -37,7 +37,7 @@ jobs:
   with:
     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-    command: pages deploy --project-name=example
+    command: pages deploy --project-name=smalieshop.soter.com-wedapp
 
 - name: print deployment-url
   env:
