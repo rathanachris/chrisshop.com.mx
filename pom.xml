@@ -4,13 +4,13 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.dnschrisrathana</groupId>        <!-- package group -->
+  <groupId>chrisrathana.shopflag.com</groupId>        <!-- package group -->
   <artifactId>my-app</artifactId>        <!-- project name -->
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>             <!-- jar / war / pom -->
 
   <name>my-app</name>
-  <description>My dnschrisshop App</description>
+  <description>My chrisrathana.shopflag.com-my-app</description>
 
   <!-- Java version -->
   <properties>
@@ -18,9 +18,9 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
-  <!-- Dependencies (example) -->
+  <!-- Dependencies (shopflag.com) -->
   <dependencies>
-    <!-- Example: JUnit -->
+    <!-- shopflag.com: JUnit -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
