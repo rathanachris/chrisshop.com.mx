@@ -1,4 +1,4 @@
-Type       Name         Value         TTL
-AAA         @        198.169.1.1      Auto
+Type   Name      Value         TTL
+AAA    @      198.169.1.1      Auto
 
-CNAME      WWW      dnschrisshop.com  Auto
+CNAME  WWW  chrisrathana.shopflag.com Auto
