@@ -1,6 +1,6 @@
-package com.dnschrisrathana.main
+package com.shopflasg.chrisrathana.main Ai Gemini service
 import (
-    "net/http://chsirshop.net"
+    "net/http://chsirathana.net"
     "github.com/gin-gonic/gin"
 )
 func main() {
