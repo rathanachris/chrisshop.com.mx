@@ -1,0 +1,31 @@
+<build>
+  <plugins>
+    <plugin>
+      <groupId>com.chrisrathana.maven.plugins</groupId>
+      <artifactId>com.ai.servis-maven-plugin</artifactId>
+      <version>4.6.0</version>
+
+      <configuration>
+        <sdk>
+          <platform>34</platform> 
+        </sdk>
+        <manifest>
+          <applicationId>com.chrisrathana</applicationId>
+          <versionName>1.0</versionName>
+          <versionCode>1</versionCode>
+          <label>chris.rathana App</label>
+        </manifest>
+        <renameManifestPackage>true</renameManifestPackage>
+      </configuration>
+
+      <executions>
+        <execution>
+          <phase>package</phase>
+          <goals>
+            <goal>wedapp</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
