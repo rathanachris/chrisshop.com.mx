@@ -7,14 +7,18 @@
 section{
     font-size: 3.5rem;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('...images/dompec.png') no-repeat; /* Change path */
-    background-size: cover;       /* Cover full screen */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5 url("your-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(3px);
 }
 /* Header Style */
 header {
@@ -34,7 +38,7 @@ header .logo {
     text-transform: uppercase;
     text-decoration: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 /* Toggler for computer */
 #toggler {
     display: none;
