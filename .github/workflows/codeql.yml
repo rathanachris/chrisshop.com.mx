@@ -45,7 +45,7 @@ jobs:
         include:
         - language: actions
           build-mode: none
-        - language: go
+        - language: python 
           build-mode: autobuild
         - language: java-kotlin
           build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
