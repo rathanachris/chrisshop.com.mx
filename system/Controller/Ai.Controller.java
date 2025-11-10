@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AiControllerApplication {
     public static void main(String[] args) {
         SpringApplication.run(AiControllerApplication.class, args);
-        System.out.println("🚀 AI Controller REST API started on https://www.dnschrisrathana.com:443");
+        System.out.println("🚀 AI Controller REST API started on https://www.chrisrathana.shopflasg.com:443");
     }
 }
