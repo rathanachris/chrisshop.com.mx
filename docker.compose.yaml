@@ -16,7 +16,7 @@ services:
     container_name: christathana.com_sql_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: christathana_com_db
+      MYSQL_DATABASE: chrisrathana.shopflasg.com_db
       MYSQL_USER: christathana_user
       MYSQL_PASSWORD: secret....
     ports:
@@ -28,7 +28,7 @@ services:
 
   webapp:
     image: nginx:latest
-    container_name: dnschrisrathana.com_web_app
+    container_name: chrisrathana.shopflasg.com_web_app
     ports:
       - "8080:80"
     volumes:
