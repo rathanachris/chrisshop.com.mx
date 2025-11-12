@@ -13,16 +13,13 @@ if(isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <title>dompecshop.com|review</title>
+    <title>chrisshop.com.mx|review.html</title>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width"=device-widh, initial-scale="1"/>    
      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet.css">
-    <meta name="description" content="Welcome to dompec.online shop!">
-    <meta property="og:title" content="dompec.online shop">
-    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type rel="icon" href="images/dompec.png">
+    <link rel="icon" type rel="icon" href="images/phonrathana.png">
 </head>
   <!-- font awesome cdn link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity=""crossorigin="anonymous">
@@ -41,6 +38,7 @@ if(isset($_POST['name'], $_POST['email'], $_POST['message'])) {
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
         <a href="about.html">About</a>
+        <a href="Product.html">Product</a>
         <a href="contact.html">Contact</a>
         <a href="review.html">review</a>
     </nav>
@@ -94,14 +92,15 @@ if(isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     </div>
 </footer>
 <script>
-function reviewpage(crt) {
+function Odserver(srt) {
 }
-const server="127.0.0.1:3000";
+const server="http://127.0.0.1:8080";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
 new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("Nav TTFB:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
+</script>
 </body>
 </html>
