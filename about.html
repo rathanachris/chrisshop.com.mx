@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="km-us">
+<html lang="us-km">
 <head>
     <meta charset="UTF-8">
     <title>chrisshop.com.mx|about.html</title>  
@@ -39,7 +39,7 @@
 <section class="about-section" id="about-section">
   <div class="row">
     <div class="container">
-      <video src="images/watermark.mp4" controls class="fade-in"></video>
+      <video src="images/vid_watermark.mp4" controls class="fade-in"></video>
       <h1 class="fade-in">About us</h1>
       <span class="fade-in">
         <center>
@@ -75,7 +75,7 @@
 <script>
 function odserver(srt) {
 }
-const server="127.0.0.1:443";
+const server="http://127.0.0.1:80";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
