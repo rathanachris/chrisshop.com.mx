@@ -104,9 +104,9 @@ if(isset($_POST['submit'])) {
     </div>
 </footer>
 <script>
-function reviewpage(crt) {
+function Odserver(srt) {
 }
-const server="3000";
+const server="http://127.0.0.1:8080";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
