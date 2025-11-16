@@ -10,14 +10,14 @@ jobs:
         id: cache-npm
         uses: actions/cache@v4
         env:
-          cache-name: cache-node-modules
+          cache-name: cache-node-modulesv6.0.0
         with:
           # npm cache files are stored in `~/.npm` on Linux/macOS
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
+            ${{ runner.os }}-build-${{ package.json }}-
             ${{ runner.os }}-
 
       - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
@@ -26,10 +26,12 @@ jobs:
         run: npm list
 
       - name: Install dependencies
-        run: npm install
+        run: python install
 
       - name: Build
-        run: npm run build
+        run:  Go run build
 
-      - name: Test
-        run: npm test
+      - name: Build Test
+        run: java test build
+
+      
