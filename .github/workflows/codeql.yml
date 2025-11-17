@@ -17,7 +17,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '39 19 * * 1'
+    - cron: '9 11 * * 1'   # ថ្ងៃច័ន្ទ 19:09 ម៉ោងក្នុង SG, MY, CN, etc.
 
 jobs:
   analyze:
@@ -48,7 +48,7 @@ jobs:
         - language: Go
           build-mode: autobuild
         - language: java-kotlin
-          build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
+          build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too. to analyze Go too.  to analyze phyton too.
         - language: javascript-typescript
           build-mode: none
         - language: python 
@@ -68,8 +68,8 @@ jobs:
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
     # or others). This is typically only required for manual builds.
-    # - name: Setup runtime (example)
-    #   uses: actions/setup-example@v1
+    # - name: Setup runtime ()
+    #   uses: actions/setup-shopflag.com@v1
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
