@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<satellites>
+    <!-- Example satellite entry -->
+    <satellite>
+        <name>Sample Satellite</name>
+        <norad_id>00000</norad_id>
+        <type>weather</type>
+        <frequency unit="MHz">0.0</frequency>
+        <orbit>
+            <inclination unit="deg">0.0</inclination>
+            <apogee unit="km">0</apogee>
+            <perigee unit="km">0</perigee>
+        </orbit>
+        <coverage>
+            <!-- Remove domain ("បញ្ចាកពីដែន") means no restriction -->
+            <global>true</global>
+        </coverage>
+    </satellite>
+</satellites>
