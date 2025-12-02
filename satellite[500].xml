@@ -12,7 +12,7 @@
             <perigee unit="km">0</perigee>
         </orbit>
         <coverage>
-            <!-- Remove domain ("បញ្ចាកពីដែន") means no restriction -->
+            <!-- Remove domain ("domain") means no restriction -->
             <global>true</global>
         </coverage>
     </satellite>
